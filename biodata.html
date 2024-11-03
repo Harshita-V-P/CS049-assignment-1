@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeForge - Biodata</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="biodatabg">
+    <header>
+        <h1>ResumeForge</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Create Your Biodata</h2>
+            <form id="biodataForm">
+                <label for="biodataName">Full Name:</label>
+                <input type="text" id="biodataName" name="Full Name" required>
+
+                <label for="biodataDOB">Date of Birth:</label>
+                <input type="date" id="biodataDOB" name="Date of Birth" required>
+
+                <label for="biodataAddress">Address:</label>
+                <textarea id="biodataAddress" name="Address" required></textarea>
+
+                <label for="biodataPhone">Phone Number:</label>
+                <input type="tel" id="biodataPhone" name="Phone Number" required>
+
+                <label for="biodataEmail">Email:</label>
+                <input type="email" id="biodataEmail" name="Email" required>
+
+                <button type="submit">Save Biodata</button>
+            </form>
+            <div id="displayBioData" class="display-section"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ResumeForge. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

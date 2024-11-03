@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeForge - Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="resumebg">
+    <header>
+        <h1>ResumeForge</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Create Your Resume</h2>
+            <form id="resumeForm">
+                <label for="resumeName">Full Name:</label>
+                <input type="text" id="resumeName" name="Full Name" required>
+
+                <label for="resumeEmail">Email:</label>
+                <input type="email" id="resumeEmail" name="Email" required>
+
+                <label for="resumePhone">Phone Number:</label>
+                <input type="tel" id="resumePhone" name="Phone Number" required>
+
+                <label for="resumeSummary">Professional Summary:</label>
+                <textarea id="resumeSummary" name="Professional Summary" required></textarea>
+
+                <label for="resumeExperience">Work Experience:</label>
+                <textarea id="resumeExperience" name="Work Experience" placeholder="e.g., Job Title, Company, Duration, Responsibilities" required></textarea>
+
+                <label for="resumeEducation">Education:</label>
+                <textarea id="resumeEducation" name="Education" placeholder="e.g., Degree, Institution, Year" required></textarea>
+
+                <label for="resumeSkills">Skills:</label>
+                <input type="text" id="resumeSkills" name="Skills" placeholder="e.g., JavaScript, HTML, CSS" required>
+
+                <button type="submit">Save Resume</button>
+            </form>
+            <div id="displayResume" class="display-section"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 ResumeForge. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
